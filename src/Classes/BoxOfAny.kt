@@ -1,11 +1,12 @@
 package Classes
 
-abstract class BoxOfAny<T : Any> (var lista : ArrayList<T>) {
-
-    fun getOne(): T{
-        var b = (0..lista.size).shuffled().first()
+class BoxOfAny <Candy>
+(val lista : ArrayList<Candy>) {
+    fun getOne(): Candy {
+        var b = (0..lista.size - 1).shuffled().first()
         var a = lista[b]
-        if (lista.size >0){
+        if (lista.size > 0) {
+            //println(a.name())
             lista.removeAt(b)
         }
         return a

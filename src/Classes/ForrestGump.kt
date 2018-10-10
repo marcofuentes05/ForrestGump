@@ -1,11 +1,9 @@
 package Classes
 
-import Interfaces.Candy
-
-class ForrestGump (val caja: BoxOfAny<Candy>) {
+class ForrestGump(val caja : BoxOfAny<Candy>) {
 
     fun pickOne():Candy{
-        println(caja.getOne().name())
+        println(caja.getOne().toString())
         return caja.getOne()
     }
 
