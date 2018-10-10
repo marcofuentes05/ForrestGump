@@ -2,7 +2,7 @@ package Classes
 
 class ForrestGump(val caja : BoxOfAny<Candy>) {
 
-    fun pickOne():Candy{
+    fun pickOne():Candy?{
         println(caja.getOne().toString())
         return caja.getOne()
     }

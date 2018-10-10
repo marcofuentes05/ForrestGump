@@ -16,6 +16,9 @@ fun main (Args : Array<String>){
     val caja2 = BoxOfAny(lista1)
     caja.getOne()
     caja2.getOne()
+
+//No se porque sale error aqui D:
+    //Help
     val forrest = ForrestGump(caja)
     val forrest2 =ForrestGump(caja2)
 }
