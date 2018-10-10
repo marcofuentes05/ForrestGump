@@ -1,6 +1,6 @@
 package Classes
 
-class BoxOfAny<T : Any> (val lista : ArrayList<T>) {
+abstract class BoxOfAny<T : Any> (var lista : ArrayList<T>) {
 
     fun getOne(): T{
         var b = (0..lista.size).shuffled().first()
