@@ -17,8 +17,13 @@ fun main (Args : Array<String>){
     caja.getOne()
     caja2.getOne()
 
-//No se porque sale error aqui D:
-    //Help
-    val forrest = ForrestGump(caja)
-    val forrest2 =ForrestGump(caja2)
+
+    val forrest = ForrestGump<Chocolate>(caja)
+    val forrest2 =ForrestGump<BubbleGum>(caja2)
+
+    forrest.pickOne()
+    forrest.talkForrest()
+
+    forrest2.pickOne()
+    forrest2.talkForrest()
 }

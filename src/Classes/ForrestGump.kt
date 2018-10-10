@@ -1,8 +1,8 @@
 package Classes
 
-class ForrestGump(val caja : BoxOfAny<Candy>) {
+class ForrestGump<T: Candy>(val caja : BoxOfAny<T>) {
 
-    fun pickOne():Candy?{
+    fun pickOne():T?{
         println(caja.getOne().toString())
         return caja.getOne()
     }
